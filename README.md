@@ -6,6 +6,8 @@ Deployed on Netlify
 
 Execution Flow:
 
+```
 +--------------------------------+    +----------------------------------+    +----------------------+
 |  Netlify's URL -- submit order | -> | Netlify form submit notification | -> | Email's Notification |
 +--------------------------------+    +----------------------------------+    +----------------------+
+```
