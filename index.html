@@ -207,6 +207,7 @@
                             desc: "coffee & filtered water",
                             price: 60000,
                             oat: false,
+                            img: "assets/dencham.jpg",
                         },
                         {
                             id: 2,
@@ -214,6 +215,7 @@
                             desc: "coffee & condensed milk",
                             price: 65000,
                             oat: false,
+                            img: "assets/suadac.jpg",
                         },
                         {
                             id: 3,
@@ -221,6 +223,7 @@
                             desc: "coffee & milk | oat milk",
                             price: 70000,
                             oat: true,
+                            img: "assets/suatuoi.jpg",
                         },
                         {
                             id: 3,
@@ -228,6 +231,7 @@
                             desc: "Vietnamese white coffee",
                             price: 75000,
                             oat: false,
+                            img: "assets/suatuoi.jpg",
                         },
                         {
                             id: 4,
@@ -235,6 +239,7 @@
                             desc: "coffee & coconut cream",
                             price: 85000,
                             oat: false,
+                            img: "assets/suatuoi.jpg",
                         },
                     ],
                 },
@@ -247,6 +252,7 @@
                             desc: "matcha & milk | oat milk",
                             price: 90000,
                             oat: true,
+                            img: "assets/lanon.jpg",
                         },
                         {
                             id: 6,
@@ -254,6 +260,7 @@
                             desc: "matcha & coconut juice",
                             price: 90000,
                             oat: false,
+                            img: "assets/duatrong.jpg",
                         },
                         {
                             id: 7,
@@ -261,6 +268,7 @@
                             desc: "matcha foam & coconut juice",
                             price: 95000,
                             oat: false,
+                            img: "assets/duamay.jpg",
                         },
                     ],
                 },
@@ -273,6 +281,7 @@
                             desc: "fermented lemon honey",
                             price: 70000,
                             oat: false,
+                            img: "assets/laplanh.jpg",
                         },
                         {
                             id: 9,
@@ -280,6 +289,7 @@
                             desc: "coffee & fermented lemon honey",
                             price: 85000,
                             oat: false,
+                            img: "assets/denhuyen.jpg",
                         },
                         {
                             id: 10,
@@ -287,6 +297,28 @@
                             desc: "matcha & fermented lemon honey",
                             price: 95000,
                             oat: false,
+                            img: "assets/chieusac.jpg",
+                        },
+                    ],
+                },
+                {
+                    cat: "houjicha",
+                    items: [
+                        {
+                            id: 11,
+                            name: "gỗ dầu",
+                            desc: "houjicha & milk | oat",
+                            price: 80000,
+                            oat: true,
+                            img: "assets/godau.jpg",
+                        },
+                        {
+                            id: 12,
+                            name: "gỗ mun",
+                            desc: "houjicha, coffee & milk | oat",
+                            price: 85000,
+                            oat: true,
+                            img: "assets/godau.jpg",
                         },
                     ],
                 },
@@ -322,6 +354,11 @@
                       <path d="M1 4L4 7L10 1" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                   </div>
+                  ${
+                      item.img
+                          ? `<img class="drink-img" src="${item.img}" alt="${item.name}" loading="lazy"/>`
+                          : `<div class="drink-img-placeholder">☕</div>`
+                  }
                   <div class="drink-info">
                     <div class="drink-name">${item.name}</div>
                     <div class="drink-desc">${item.desc}</div>
